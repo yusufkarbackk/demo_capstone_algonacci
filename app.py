@@ -45,7 +45,6 @@ def index():
 
 
 @app.route("/prediction", methods=["POST"])
-@auth.login_required()
 def prediction_route():
     if request.method == "POST":
         image = request.files["image"]
